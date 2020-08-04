@@ -1,0 +1,12 @@
+.addpost li {
+    cursor: pointer;
+     border-right: 1px solid lightgray;
+}
+.card{
+    padding: 15px ;
+    margin: auto;
+   
+}
+.justify-content-end {
+    margin-left: auto;
+}
