@@ -1,4 +1,5 @@
 import React from 'react';
+import * as moment from 'moment'
 import avatar from '../asset/icon-avatar.png';
 import "./feed.style.css";
 
@@ -6,7 +7,10 @@ const Feedlist = (props) => {
     return (<div className="row">
         <div className="col">
             <div className="card">
+                <div class="d-flex  justify-content-between">
                 <p>{props.data.topics.join('-')}</p>
+                <p  class="float-right">{moment(props.data.date).fromNow()}</p>
+                </div>
                 <div className="media shadow" style={{ backgroundColor: "white", padding: '15px' }}  >
                     <img className="align-self-start mr-3" src={avatar} style={{
                         verticalAlign: 'middle',
